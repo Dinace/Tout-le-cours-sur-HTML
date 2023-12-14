@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le titre de la page -->
+
+    <title>Cours HTML de Zéro</title>
+
+    <!-- Icone de l'onglet -->
+
+    <link rel="shortcut icon" href="./logo-head.png" type="image/x-icon">
+
+</head>
+<body>
+    <nav>
+        <!-- UL = Unordered list -->
+        <ul>
+            <li>Accueil</li>
+            <li>Boutique</li>
+            <li>
+                <a href="#form">formulaire</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Le Header du site -->
+    <header>
+        <h1>Ceci est le titre principale</h1>
+        <p>
+            Texte classique <em>Texte en italique</em><strong>Texte en gras</strong>
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ratione, non tempore aperiam ut similique aspernatur suscipit temporibus cupiditate sint sapiente perspiciatis dolorum. Natus laboriosam deleniti tempora obcaecati facere.</p>
+    </header>
+
+    <!-- La partie principale du site -->
+    <main>
+       <section>
+            <h2>Ordered list</h2>
+            <ol>
+                <li>Ceci est une liste</li>
+                <li>Dans l'ordre</li>
+                <li>Avec des numéro</li>
+                <li>précis</li>
+            </ol>
+       </section> 
+
+       <!-- Une nouvelle section pour mettre une image -->
+       <section>
+        <h3>Image en HTML</h3>
+        <img src="./background-image.webp" width = "300" height="300" alt="image-section">
+
+        <div>
+            <h4>Tableau</h4>
+            <table border="6" cellpadding = "10" cellspacing = "4" style="text-align: center;">
+                <!-- thead est pour l'entête du tableau -->
+                <thead>
+                    <!-- tr est pour les lignes -->
+                    <!-- th est pour les colonnes de l'entête -->
+                    <tr>
+                        <th>Col 1 </th>
+                        <th>Col 2 </th>
+                        <th>Col 3 </th>
+                        <th>Col 4 </th>
+                    </tr>
+                </thead>
+                <!-- tbody est pour le contenu du tableau -->
+                <!-- td est pour les colonnes normales du tableau dans body -->
+                <tbody>
+                    <tr>
+                       <td rowspan="2">A</td>
+                       <td>B</td>
+                       <td>C</td>
+                       <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>E</td>
+                        <td colspan="2">F</td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Les liens en html -->
+
+        <div>
+            <h5> <span>&#8594;</span>Les liens</h5>
+            <!-- _blank permet de creer un nouvel onglet à côté -->
+
+            <a href="https://htmlcheatsheet.com" target="_blank">Liens pour un pense bête en HTML</a>
+        </div>
+
+        <div>
+            <!-- vidéo -->
+            <h6 <i>&#128293;</i>>Vidéos</h6>
+            <video src="./video-Jesus.mp4" autoplay width="400" muted loop ></video>
+        </div>
+       </section>
+
+       <!-- Formulaires -->
+       <h2 id="form">Les formulaires</h2>
+
+       <form action="">
+
+        <!-- "For" et "id" permettent de lier le label à l'input -->
+
+        <label for="name">Nom</label>
+        <input type="text" id="name" placeholder="Entrer votre nom">
+
+        <br>
+        <br>
+        <!-- l'input de type nomber peut servir pour mettre notre age par exemple -->
+
+        <label for="age">Entrez votre âge</label>
+        <input type="number" id="age" value="0">
+
+        <br>
+        <br>
+        <!-- Input de type select peut servir pour les choix multiple. Il contient donc des options -->
+
+        <label for="gender">Quel est votre genre ?</label>
+
+        <select name="gender" id="gender">
+            <option value="Masculin">Masculin</option>
+            <option value="Féminin" selected = "selected">Féminin</option>
+            <option value="Autre">Autre</option>
+        </select>
+
+        <!-- Input de type radio -->
+        <div>
+            <input type="radio" name="type" id="humain" checked>
+            <label for="humain">humain</label>
+
+            <input type="radio" name="type" id="dog">
+            <label for="dog">chien</label>
+
+            <input type="radio" name="type" id="cat">
+            <label for="cat">chat</label>
+        </div>
+
+        <textarea placeholder="Entrez votre message ici" id="message" cols="30" rows="10"></textarea>
+        <br>
+        <!-- Input de type submit qui permet de valider un formulaire -->
+        <input type="submit" value="Valider" id="message">
+        <br>
+        <br>
+
+        <!-- Input de type checkbox -->
+        <label for="CGV">ACCEPTER LES CONDITIONS DE VENTE</label>
+        <input type="checkbox" name="" id="CGV">
+       
+       </form>
+
+       <button>Ceci est un bouton</button>
+       <br>
+       <!-- Mail et envoie des fichiers -->
+
+       <footer>
+        <a href="mailto:limikoudieudonne@yahoo.fr">Contactez moi par courriel</a>
+        <br>
+        <a href="./notice.txt" download="notice">Télécharger la notice</a>
+       </footer>
+
+    </main>
+    
+</body>
+</html>
